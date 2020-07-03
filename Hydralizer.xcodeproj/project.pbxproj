@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BCEA75F24AEC9B100F2BDC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEA75E24AEC9B100F2BDC8 /* AppDelegate.swift */; };
+		2BCEA76124AEC9B100F2BDC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEA76024AEC9B100F2BDC8 /* SceneDelegate.swift */; };
+		2BCEA76324AEC9B100F2BDC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEA76224AEC9B100F2BDC8 /* ViewController.swift */; };
+		2BCEA76624AEC9B100F2BDC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCEA76424AEC9B100F2BDC8 /* Main.storyboard */; };
+		2BCEA76824AEC9B700F2BDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BCEA76724AEC9B700F2BDC8 /* Assets.xcassets */; };
+		2BCEA76B24AEC9B700F2BDC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCEA76924AEC9B700F2BDC8 /* LaunchScreen.storyboard */; };
+		2BCEA77024AEC9B700F2BDC8 /* Hydralizer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2BCEA76F24AEC9B700F2BDC8 /* Hydralizer WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2BCEA77624AEC9B700F2BDC8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCEA77424AEC9B700F2BDC8 /* Interface.storyboard */; };
+		2BCEA77824AEC9B900F2BDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BCEA77724AEC9B900F2BDC8 /* Assets.xcassets */; };
+		2BCEA77F24AEC9B900F2BDC8 /* Hydralizer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2BCEA77E24AEC9B900F2BDC8 /* Hydralizer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2BCEA78424AEC9B900F2BDC8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEA78324AEC9B900F2BDC8 /* InterfaceController.swift */; };
+		2BCEA78624AEC9B900F2BDC8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEA78524AEC9B900F2BDC8 /* ExtensionDelegate.swift */; };
+		2BCEA78824AEC9B900F2BDC8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEA78724AEC9B900F2BDC8 /* NotificationController.swift */; };
+		2BCEA78A24AEC9B900F2BDC8 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEA78924AEC9B900F2BDC8 /* ComplicationController.swift */; };
+		2BCEA78C24AEC9BB00F2BDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BCEA78B24AEC9BB00F2BDC8 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BCEA77124AEC9B700F2BDC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BCEA75324AEC9B100F2BDC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BCEA76E24AEC9B700F2BDC8;
+			remoteInfo = "Hydralizer WatchKit App";
+		};
+		2BCEA78024AEC9B900F2BDC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BCEA75324AEC9B100F2BDC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BCEA77D24AEC9B900F2BDC8;
+			remoteInfo = "Hydralizer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2BCEA79424AEC9BB00F2BDC8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2BCEA77F24AEC9B900F2BDC8 /* Hydralizer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BCEA79824AEC9BB00F2BDC8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2BCEA77024AEC9B700F2BDC8 /* Hydralizer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2BCEA75B24AEC9B100F2BDC8 /* Hydralizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hydralizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCEA75E24AEC9B100F2BDC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2BCEA76024AEC9B100F2BDC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2BCEA76224AEC9B100F2BDC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BCEA76524AEC9B100F2BDC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BCEA76724AEC9B700F2BDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BCEA76A24AEC9B700F2BDC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BCEA76C24AEC9B700F2BDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BCEA76F24AEC9B700F2BDC8 /* Hydralizer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hydralizer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCEA77524AEC9B700F2BDC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2BCEA77724AEC9B900F2BDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BCEA77924AEC9B900F2BDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BCEA77E24AEC9B900F2BDC8 /* Hydralizer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Hydralizer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCEA78324AEC9B900F2BDC8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2BCEA78524AEC9B900F2BDC8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2BCEA78724AEC9B900F2BDC8 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2BCEA78924AEC9B900F2BDC8 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		2BCEA78B24AEC9BB00F2BDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BCEA78D24AEC9BB00F2BDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BCEA78E24AEC9BB00F2BDC8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BCEA75824AEC9B100F2BDC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BCEA77B24AEC9B900F2BDC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BCEA75224AEC9B100F2BDC8 = {
+			isa = PBXGroup;
+			children = (
+				2BCEA75D24AEC9B100F2BDC8 /* Hydralizer */,
+				2BCEA77324AEC9B700F2BDC8 /* Hydralizer WatchKit App */,
+				2BCEA78224AEC9B900F2BDC8 /* Hydralizer WatchKit Extension */,
+				2BCEA75C24AEC9B100F2BDC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BCEA75C24AEC9B100F2BDC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BCEA75B24AEC9B100F2BDC8 /* Hydralizer.app */,
+				2BCEA76F24AEC9B700F2BDC8 /* Hydralizer WatchKit App.app */,
+				2BCEA77E24AEC9B900F2BDC8 /* Hydralizer WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BCEA75D24AEC9B100F2BDC8 /* Hydralizer */ = {
+			isa = PBXGroup;
+			children = (
+				2BCEA75E24AEC9B100F2BDC8 /* AppDelegate.swift */,
+				2BCEA76024AEC9B100F2BDC8 /* SceneDelegate.swift */,
+				2BCEA76224AEC9B100F2BDC8 /* ViewController.swift */,
+				2BCEA76424AEC9B100F2BDC8 /* Main.storyboard */,
+				2BCEA76724AEC9B700F2BDC8 /* Assets.xcassets */,
+				2BCEA76924AEC9B700F2BDC8 /* LaunchScreen.storyboard */,
+				2BCEA76C24AEC9B700F2BDC8 /* Info.plist */,
+			);
+			path = Hydralizer;
+			sourceTree = "<group>";
+		};
+		2BCEA77324AEC9B700F2BDC8 /* Hydralizer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2BCEA77424AEC9B700F2BDC8 /* Interface.storyboard */,
+				2BCEA77724AEC9B900F2BDC8 /* Assets.xcassets */,
+				2BCEA77924AEC9B900F2BDC8 /* Info.plist */,
+			);
+			path = "Hydralizer WatchKit App";
+			sourceTree = "<group>";
+		};
+		2BCEA78224AEC9B900F2BDC8 /* Hydralizer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2BCEA78324AEC9B900F2BDC8 /* InterfaceController.swift */,
+				2BCEA78524AEC9B900F2BDC8 /* ExtensionDelegate.swift */,
+				2BCEA78724AEC9B900F2BDC8 /* NotificationController.swift */,
+				2BCEA78924AEC9B900F2BDC8 /* ComplicationController.swift */,
+				2BCEA78B24AEC9BB00F2BDC8 /* Assets.xcassets */,
+				2BCEA78D24AEC9BB00F2BDC8 /* Info.plist */,
+				2BCEA78E24AEC9BB00F2BDC8 /* PushNotificationPayload.apns */,
+			);
+			path = "Hydralizer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BCEA75A24AEC9B100F2BDC8 /* Hydralizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BCEA79924AEC9BB00F2BDC8 /* Build configuration list for PBXNativeTarget "Hydralizer" */;
+			buildPhases = (
+				2BCEA75724AEC9B100F2BDC8 /* Sources */,
+				2BCEA75824AEC9B100F2BDC8 /* Frameworks */,
+				2BCEA75924AEC9B100F2BDC8 /* Resources */,
+				2BCEA79824AEC9BB00F2BDC8 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BCEA77224AEC9B700F2BDC8 /* PBXTargetDependency */,
+			);
+			name = Hydralizer;
+			productName = Hydralizer;
+			productReference = 2BCEA75B24AEC9B100F2BDC8 /* Hydralizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BCEA76E24AEC9B700F2BDC8 /* Hydralizer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BCEA79524AEC9BB00F2BDC8 /* Build configuration list for PBXNativeTarget "Hydralizer WatchKit App" */;
+			buildPhases = (
+				2BCEA76D24AEC9B700F2BDC8 /* Resources */,
+				2BCEA79424AEC9BB00F2BDC8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BCEA78124AEC9B900F2BDC8 /* PBXTargetDependency */,
+			);
+			name = "Hydralizer WatchKit App";
+			productName = "Hydralizer WatchKit App";
+			productReference = 2BCEA76F24AEC9B700F2BDC8 /* Hydralizer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2BCEA77D24AEC9B900F2BDC8 /* Hydralizer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BCEA79124AEC9BB00F2BDC8 /* Build configuration list for PBXNativeTarget "Hydralizer WatchKit Extension" */;
+			buildPhases = (
+				2BCEA77A24AEC9B900F2BDC8 /* Sources */,
+				2BCEA77B24AEC9B900F2BDC8 /* Frameworks */,
+				2BCEA77C24AEC9B900F2BDC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hydralizer WatchKit Extension";
+			productName = "Hydralizer WatchKit Extension";
+			productReference = 2BCEA77E24AEC9B900F2BDC8 /* Hydralizer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BCEA75324AEC9B100F2BDC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Anuj Parakh";
+				TargetAttributes = {
+					2BCEA75A24AEC9B100F2BDC8 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					2BCEA76E24AEC9B700F2BDC8 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					2BCEA77D24AEC9B900F2BDC8 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 2BCEA75624AEC9B100F2BDC8 /* Build configuration list for PBXProject "Hydralizer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BCEA75224AEC9B100F2BDC8;
+			productRefGroup = 2BCEA75C24AEC9B100F2BDC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BCEA75A24AEC9B100F2BDC8 /* Hydralizer */,
+				2BCEA76E24AEC9B700F2BDC8 /* Hydralizer WatchKit App */,
+				2BCEA77D24AEC9B900F2BDC8 /* Hydralizer WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BCEA75924AEC9B100F2BDC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCEA76B24AEC9B700F2BDC8 /* LaunchScreen.storyboard in Resources */,
+				2BCEA76824AEC9B700F2BDC8 /* Assets.xcassets in Resources */,
+				2BCEA76624AEC9B100F2BDC8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BCEA76D24AEC9B700F2BDC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCEA77824AEC9B900F2BDC8 /* Assets.xcassets in Resources */,
+				2BCEA77624AEC9B700F2BDC8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BCEA77C24AEC9B900F2BDC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCEA78C24AEC9BB00F2BDC8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BCEA75724AEC9B100F2BDC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCEA76324AEC9B100F2BDC8 /* ViewController.swift in Sources */,
+				2BCEA75F24AEC9B100F2BDC8 /* AppDelegate.swift in Sources */,
+				2BCEA76124AEC9B100F2BDC8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BCEA77A24AEC9B900F2BDC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCEA78824AEC9B900F2BDC8 /* NotificationController.swift in Sources */,
+				2BCEA78A24AEC9B900F2BDC8 /* ComplicationController.swift in Sources */,
+				2BCEA78624AEC9B900F2BDC8 /* ExtensionDelegate.swift in Sources */,
+				2BCEA78424AEC9B900F2BDC8 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BCEA77224AEC9B700F2BDC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BCEA76E24AEC9B700F2BDC8 /* Hydralizer WatchKit App */;
+			targetProxy = 2BCEA77124AEC9B700F2BDC8 /* PBXContainerItemProxy */;
+		};
+		2BCEA78124AEC9B900F2BDC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BCEA77D24AEC9B900F2BDC8 /* Hydralizer WatchKit Extension */;
+			targetProxy = 2BCEA78024AEC9B900F2BDC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BCEA76424AEC9B100F2BDC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BCEA76524AEC9B100F2BDC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BCEA76924AEC9B700F2BDC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BCEA76A24AEC9B700F2BDC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2BCEA77424AEC9B700F2BDC8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BCEA77524AEC9B700F2BDC8 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BCEA78F24AEC9BB00F2BDC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2BCEA79024AEC9BB00F2BDC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BCEA79224AEC9BB00F2BDC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T628V6ULQ5;
+				INFOPLIST_FILE = "Hydralizer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anuj.Hydralizer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		2BCEA79324AEC9BB00F2BDC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T628V6ULQ5;
+				INFOPLIST_FILE = "Hydralizer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anuj.Hydralizer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		2BCEA79624AEC9BB00F2BDC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T628V6ULQ5;
+				IBSC_MODULE = Hydralizer_WatchKit_Extension;
+				INFOPLIST_FILE = "Hydralizer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anuj.Hydralizer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		2BCEA79724AEC9BB00F2BDC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T628V6ULQ5;
+				IBSC_MODULE = Hydralizer_WatchKit_Extension;
+				INFOPLIST_FILE = "Hydralizer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anuj.Hydralizer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		2BCEA79A24AEC9BB00F2BDC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T628V6ULQ5;
+				INFOPLIST_FILE = Hydralizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anuj.Hydralizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BCEA79B24AEC9BB00F2BDC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T628V6ULQ5;
+				INFOPLIST_FILE = Hydralizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anuj.Hydralizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BCEA75624AEC9B100F2BDC8 /* Build configuration list for PBXProject "Hydralizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BCEA78F24AEC9BB00F2BDC8 /* Debug */,
+				2BCEA79024AEC9BB00F2BDC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BCEA79124AEC9BB00F2BDC8 /* Build configuration list for PBXNativeTarget "Hydralizer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BCEA79224AEC9BB00F2BDC8 /* Debug */,
+				2BCEA79324AEC9BB00F2BDC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BCEA79524AEC9BB00F2BDC8 /* Build configuration list for PBXNativeTarget "Hydralizer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BCEA79624AEC9BB00F2BDC8 /* Debug */,
+				2BCEA79724AEC9BB00F2BDC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BCEA79924AEC9BB00F2BDC8 /* Build configuration list for PBXNativeTarget "Hydralizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BCEA79A24AEC9BB00F2BDC8 /* Debug */,
+				2BCEA79B24AEC9BB00F2BDC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BCEA75324AEC9B100F2BDC8 /* Project object */;
+}
