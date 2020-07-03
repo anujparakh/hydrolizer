@@ -1,23 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Hydralizer_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="MtQ-O0-aAq">
+                            <items>
+                                <group width="1" alignment="left" id="wRS-iN-1Bw" userLabel="port2    pc">
+                                    <items>
+                                        <imageView width="41" height="41" alignment="center" image="Droplet" id="toF-Zc-nL5">
+                                            <color key="tintColor" red="0.606245916" green="0.78521078970000002" blue="0.91560572389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </imageView>
+                                        <label width="94" height="43" alignment="center" text="Hydralizer" textAlignment="center" numberOfLines="2" id="752-1L-ioK">
+                                            <color key="textColor" red="0.606245916" green="0.78521078970000002" blue="0.91560572389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" type="system" pointSize="20"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <switch width="1" alignment="left" value="YES" title="Notify me" id="AFf-0r-3uz">
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="16"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" red="0.606245916" green="0.78521078970000002" blue="0.91560572389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <action selector="notificationSwitchToggled:" destination="AgC-eL-Hgc" id="UFY-0v-rpB"/>
+                                    </connections>
+                                </switch>
+                                <slider width="1" alignment="left" continuous="YES" value="8" minimum="1" maximum="12" steps="12" id="QUD-zZ-vLu" userLabel="mouse emulation enabled">
+                                    <color key="color" red="0.606245916" green="0.78521078970000002" blue="0.91560572389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <action selector="glassesCounterChanged:" destination="AgC-eL-Hgc" id="iMF-E1-2Zb"/>
+                                    </connections>
+                                </slider>
+                                <group width="1" alignment="left" id="um8-gO-MG8">
+                                    <items>
+                                        <label alignment="center" verticalAlignment="center" text="Glasses a day:" textAlignment="center" id="r3a-Yg-NoD">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="font" type="system" weight="light" pointSize="16"/>
+                                        </label>
+                                        <label width="23" alignment="center" verticalAlignment="center" text="8" textAlignment="center" id="CNB-e0-BOf">
+                                            <color key="textColor" red="0.60784313725490191" green="0.78431372549019607" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="font" type="system" weight="light" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="2" bottom="0.0"/>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="8" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="glassesCounter" destination="QUD-zZ-vLu" id="aZi-X7-Jud"/>
+                        <outlet property="glassesCounterLabel" destination="CNB-e0-BOf" id="HUM-Ez-jma"/>
+                        <outlet property="notificationSwitch" destination="AFf-0r-3uz" id="Fkc-ry-FjG"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="344"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                        <label alignment="center" text="Time to drink" textAlignment="center" numberOfLines="0" id="IdU-wH-bcW">
+                            <color key="textColor" red="0.60784313729999995" green="0.7843137255" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
@@ -32,16 +86,30 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Hydralizer_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Time to drink" numberOfLines="0" id="oul-eO-DOp"/>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Hydralizer_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Time to drink" numberOfLines="0" id="m0A-7L-2t7"/>
+                        <button width="1" alignment="left" title="Drinking" id="pTy-0z-OSW">
+                            <color key="titleColor" red="0.606245916" green="0.78521078970000002" blue="0.91560572389999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Droplet" width="256" height="256"/>
+    </resources>
 </document>

@@ -22,6 +22,11 @@
 		2BCEA78824AEC9B900F2BDC8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEA78724AEC9B900F2BDC8 /* NotificationController.swift */; };
 		2BCEA78A24AEC9B900F2BDC8 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEA78924AEC9B900F2BDC8 /* ComplicationController.swift */; };
 		2BCEA78C24AEC9BB00F2BDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BCEA78B24AEC9BB00F2BDC8 /* Assets.xcassets */; };
+		2BCEA7A424AF961700F2BDC8 /* droplet.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCEA7A124AF961700F2BDC8 /* droplet.png */; };
+		2BCEA7A524AF961700F2BDC8 /* droplet_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCEA7A224AF961700F2BDC8 /* droplet_green.png */; };
+		2BCEA7A624AF961700F2BDC8 /* droplet_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BCEA7A324AF961700F2BDC8 /* droplet_blue.png */; };
+		2BCEA7A824AFA13900F2BDC8 /* HydroVals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEA7A724AFA13900F2BDC8 /* HydroVals.swift */; };
+		2BCEA7AA24AFA47600F2BDC8 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEA7A924AFA47600F2BDC8 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +92,11 @@
 		2BCEA78B24AEC9BB00F2BDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BCEA78D24AEC9BB00F2BDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BCEA78E24AEC9BB00F2BDC8 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2BCEA7A124AF961700F2BDC8 /* droplet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = droplet.png; sourceTree = "<group>"; };
+		2BCEA7A224AF961700F2BDC8 /* droplet_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = droplet_green.png; sourceTree = "<group>"; };
+		2BCEA7A324AF961700F2BDC8 /* droplet_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = droplet_blue.png; sourceTree = "<group>"; };
+		2BCEA7A724AFA13900F2BDC8 /* HydroVals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydroVals.swift; sourceTree = "<group>"; };
+		2BCEA7A924AFA47600F2BDC8 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +154,7 @@
 		2BCEA77324AEC9B700F2BDC8 /* Hydralizer WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				2BCEA79C24AF923200F2BDC8 /* Images */,
 				2BCEA77424AEC9B700F2BDC8 /* Interface.storyboard */,
 				2BCEA77724AEC9B900F2BDC8 /* Assets.xcassets */,
 				2BCEA77924AEC9B900F2BDC8 /* Info.plist */,
@@ -155,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				2BCEA78324AEC9B900F2BDC8 /* InterfaceController.swift */,
+				2BCEA7A924AFA47600F2BDC8 /* Utility.swift */,
+				2BCEA7A724AFA13900F2BDC8 /* HydroVals.swift */,
 				2BCEA78524AEC9B900F2BDC8 /* ExtensionDelegate.swift */,
 				2BCEA78724AEC9B900F2BDC8 /* NotificationController.swift */,
 				2BCEA78924AEC9B900F2BDC8 /* ComplicationController.swift */,
@@ -163,6 +176,16 @@
 				2BCEA78E24AEC9BB00F2BDC8 /* PushNotificationPayload.apns */,
 			);
 			path = "Hydralizer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2BCEA79C24AF923200F2BDC8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2BCEA7A324AF961700F2BDC8 /* droplet_blue.png */,
+				2BCEA7A224AF961700F2BDC8 /* droplet_green.png */,
+				2BCEA7A124AF961700F2BDC8 /* droplet.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +290,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BCEA7A624AF961700F2BDC8 /* droplet_blue.png in Resources */,
 				2BCEA76B24AEC9B700F2BDC8 /* LaunchScreen.storyboard in Resources */,
 				2BCEA76824AEC9B700F2BDC8 /* Assets.xcassets in Resources */,
 				2BCEA76624AEC9B100F2BDC8 /* Main.storyboard in Resources */,
+				2BCEA7A524AF961700F2BDC8 /* droplet_green.png in Resources */,
+				2BCEA7A424AF961700F2BDC8 /* droplet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +333,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BCEA7A824AFA13900F2BDC8 /* HydroVals.swift in Sources */,
 				2BCEA78824AEC9B900F2BDC8 /* NotificationController.swift in Sources */,
+				2BCEA7AA24AFA47600F2BDC8 /* Utility.swift in Sources */,
 				2BCEA78A24AEC9B900F2BDC8 /* ComplicationController.swift in Sources */,
 				2BCEA78624AEC9B900F2BDC8 /* ExtensionDelegate.swift in Sources */,
 				2BCEA78424AEC9B900F2BDC8 /* InterfaceController.swift in Sources */,
